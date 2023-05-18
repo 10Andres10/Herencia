@@ -1,23 +1,26 @@
 package modelo;
 
+import java.lang.Math;
+
 public class Circulo extends Figura {
 
     // Atributos
-    public double diametro, radio = diametro / 2;
+    public double diametro;
 
     // Constructor
-    public Circulo (double diametro)
-    {
+    public Circulo (double diametro){
 
         this.diametro = diametro;
-
+    
     }
 
     // Métodos
-    public void calcularArea(double radio){
+    public void calcularArea(double diametro){
 
+        double radio = diametro / 2;                
         // Área círculo = pi por radio al cuadrado.
-        area = (radio*radio) * Math.PI;
+        // A = π * r²
+        area = Math.PI * Math.pow(radio, 2);      
 
     }
 

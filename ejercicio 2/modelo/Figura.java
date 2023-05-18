@@ -13,10 +13,6 @@ public class Figura {
     }
 
     // Métodos
-    public double getArea(){
-        return area;
-    }
-
     public double mostrarArea(){
 
         return this.area;
